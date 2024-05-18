@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    position: relative;
+    width: 15vw;
+    height: 15vw;
+    margin: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1.5vw solid transparent;
+    box-shadow: 0 0 2vw rgba(255, 255, 255, 0.2);
+}
+
+#hours-circle {
+    border-top-color: #ff4500; /* Cor vibrante para horas */
+    animation: rotate 43200s linear infinite;
+}
+
+#minutes-circle {
+    border-top-color: #00ff7f; /* Cor vibrante para minutos */
+    animation: rotate 3600s linear infinite;
+}
+
+#seconds-circle {
+    border-top-color: #1e90ff; /* Cor vibrante para segundos */
+    animation: rotate 60s linear infinite;
+}
+
+.time {
+    position: absolute;
+    font-size: 4vw;
+    text-shadow: 0 0 1vw rgba(255, 255, 255, 0.7);
+    font-family: 'Bubblegum Sans', sans-serif; /* Fonte Bubblegum Sans */
+}
+.label {
+    position: absolute;
+    bottom: 26%;
+    font-size: 16px; /* Tamanho da fonte para a label */
+    text-shadow: 0 0 1vw rgba(255, 255, 255, 0.7);
+    font-family: 'Bubblegum Sans', sans-serif; /* Fonte Bubblegum Sans */
+    text-align: center;
+}
+
+.divider {
+    font-size: 5vw;
+    margin: 0 2vw;
+    text-shadow: 0 0 1vw rgba(255, 255, 255, 0.7);
+}
+
+.date {
+    margin-top: 10vh;
+    font-size: 4vw; /* Reduzindo um pouco o tamanho da fonte */
+    letter-spacing: 0.3em; /* Adicionando espaçamento entre as letras */
+    text-shadow: 0 0 2vw rgba(255, 255, 255, 0.7);
+    font-family: 'Rubik Lines', sans-serif;
+    text-align: center;
+}
