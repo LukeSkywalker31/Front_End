@@ -11,7 +11,13 @@
         table{
             width: 500px;
             /*height: 400px;*/
-            border-collapse: collapse;          
+            border-collapse: collapse;
+            position: relative;     
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
         caption{
             font-size: 1.5em;
@@ -29,6 +35,10 @@
         td.pos{
             text-align: left;
         }
+        tbody tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        
         thead, tfoot{
             background-color: gray;
             color: white;
@@ -196,11 +206,10 @@
         </tbody>
         <tfoot>
             <tr>
-                <th></th>
-                <th scope="row">Total de habitantes</th>
+                <th scope="row" colspan="2">Total de habitantes</th>
                 <td class="num"><strong>203.062.512</strong></td>
             </tr>
         </tfoot>
-    </table>    
+    </table>
 </body>
 </html>
