@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <form action="cadastro.php" autocomplete="on" method="post">
+        <p><label for="iusu">Usuário:</label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="16" size="20" placeholder="nome do usuario" autocomplete="username"></p>
+        <p><label for="isen">Senha:</label>
+        <input type="password" name="sen" id="isen" required minlength="6" maxlength="16"size="20" autocomplete="current-password"></p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    
+</body>
+</html>
+
+<!--
+    size = tamanho da caixa de input
+    required = campo obrigatorio de preenchimento
+    placeholder = dica para o usuario
+    autocomplete = liga e desliga a dica de preenchimento
+    -- para voce assossiar a caixa de input ao que é de fato, 
+    vc precisa usar o autocomplete direto no input--
+-->
